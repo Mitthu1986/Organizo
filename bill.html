@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Finance/Bills Tracker</title>
+  
+  <link rel="stylesheet" href="main.css">
+  <button id="theme">☀️ mode</button>
+</head>
+<body>
+    <div class="container">
+  <h1>Bills Tracker</h1>
+  <form id="billForm">
+    <input type="text" id="desc" placeholder="Description" required>
+    <input type="number" id="amount" placeholder="Amount" required>
+    <input type="date" id="date" required>
+    <button type="submit">Add Bill</button>
+  </form>
+  <table id="billsTable">
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th>Amount</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Entries go here -->
+    </tbody>
+  </table>
+  <button id="downloadBtn">Download as CSV</button>
+  <script src="bill.js"></script>
+  <script src="index.js"></script>
+  </div>
+</body>
+</html>
