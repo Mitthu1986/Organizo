@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chores Assignment</title>
+    <link rel="stylesheet" href="main.css">
+    <button id="theme">☀️ mode</button>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="chores">
+        <h1>Assign Chores</h1>
+        <form id="choreForm">
+            <input type="text" id="member" placeholder="Family Member Name" required>
+            <input type="text" id="chore" placeholder="Chore Description" required>
+            <button type="submit">Assign Chore</button>
+        </form>
+        <table id="choresTable">
+            <thead>
+                <tr>
+                    <th>Member</th>
+                    <th>Chore</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Chore entries go here -->
+            </tbody>
+        </table>
+        ...
+<table id="choresTable">
+    <thead>
+        <tr>
+            <th>Member</th>
+            <th>Chore</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Chore entries go here -->
+    </tbody>
+</table>
+<button id="downloadCsvBtn">Download as CSV</button>
+<button id="downloadTxtBtn">Download as TXT</button>
+...
+        <h2>Chores Distribution</h2>
+        <canvas id="choresChart" width="400" height="300"></canvas>
+    </div>
+    <script src="chores.js"></script>
+    <script src="index.js"></script>
+    </div>
+</body>
+</html>
